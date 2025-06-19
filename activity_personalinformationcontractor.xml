@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".PersonalInformationContractor">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Information"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="16dp"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        android:src="@drawable/profile" />
+
+    <EditText
+        android:id="@+id/editTextText7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextText7"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextPhone2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextEmailAddress4"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="phone" />
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPhone2"
+        android:entries="@array/gender_array" />
+
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerGender"
+        android:text="Edit profile"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button12"
+        android:text="Back"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

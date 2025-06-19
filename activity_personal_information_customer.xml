@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".Profilecustomer1">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Information"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"/>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="16dp"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        android:src="@drawable/profile" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextText6"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="E-mail"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPostalAddress2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextEmailAddress3"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="Address"
+        />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextPostalAddress2"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="Phone number"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPhone"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit profile"
+        android:layout_below="@id/spinnerGender"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_below="@id/button9"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

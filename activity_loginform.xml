@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/loginimg"
+    android:gravity="bottom"
+    tools:context=".loginform">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="16dp" />
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/inputUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView12"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputUsername"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="*********"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/white"
+        android:textColorLink="@color/white"
+        android:layout_below="@id/inputPassword" />
+
+    <TextView
+        android:id="@+id/Forgotpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text=" Forgot Password ?"
+        android:textColor="@color/white"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="@color/lightpurple">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Renew My Home"
+                android:textSize="34sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="11dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            <!-- App Logo -->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@id/search_bar"
+                android:layout_below="@id/app_name" />
+
+            <!-- Search Bar -->
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Search..."
+                android:padding="10dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Renew My Home Services"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RENOVATORS WHO CAN BRING YOUR VISION TO LIFE "
+            android:textSize="16sp"
+            android:textStyle="italic"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="From the bathroom to the kitchen, ReNew Home Innovations serves homeowners throughout the Greater Denver Metro Area and communities along the front range. The time for remodeling can be both exciting and stressful for property owners. It’s exciting because you can think about how you’ve always wanted your home to look and make that a reality. But there’s stress involved too, as a homeowner seeks to reconcile their vision with their budget and considers the wide range of options available. That’s where ReNew Home Innovations comes in.
+We take the time to listen to our customers—to understand exactly it is they want and what they’re hoping to achieve with their home reno project. We then draw on years of experience and extensive knowledge of the industry to propose a design plan that will meet their needs and do it at a price they can afford. "/>
+
+        <!-- Horizontal Scroll View for Renovation Services -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Renovation Service 1 - Kitchen -->
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/bed1"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <!-- Renovation Service 2 - Bedroom -->
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/bed1"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"/>
+
+                <!-- Renovation Service 3 - Living Room -->
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/bed1"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <!-- Renovation Service 4 - Exterior -->
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/bed1"
+                    android:padding="10dp"
+                    android:scaleType="centerCrop"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Vertical Scroll View for Text Descriptions -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Text Descriptions for Renovation Services -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kitchen Renovation"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Transform your kitchen into a culinary masterpiece with our innovative renovation solutions. Experience the joy of cooking in a beautifully renovated kitchen tailored to your taste and style. From modern designs to timeless classics, discover the perfect kitchen makeover for your lifestyle. Say goodbye to outdated kitchens and hello to a fresh, functional, and fabulous culinary space. Create memories and meals in a kitchen designed just for you, blending functionality and aesthetics effortlessly. Let us turn your vision into reality with our top-notch renovation expertise, enhancing the heart of your home and inspiring your culinary adventures."/>
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/bed1"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/hometokitchen">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bedroom Renovation"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Elevate your bedroom into a serene sanctuary with our exceptional renovation services. Experience the luxury of a customized space designed for comfort and relaxation. From cozy retreats to modern havens, discover the perfect bedroom makeover that reflects your unique style. Transform your sleeping space into a haven of tranquility, where every detail is crafted to enhance your comfort and well-being. Say goodbye to ordinary bedrooms and hello to a dreamy, personalized oasis. Let us turn your bedroom dreams into reality with our expertise, creating a space where you can unwind, recharge, and indulge in peaceful slumber."/>
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/bed1"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Living Room Renovation"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Transform your living room into a stylish and inviting space with our premier renovation services. Experience the warmth and comfort of a beautifully revamped living area designed to suit your lifestyle. From contemporary chic to classic elegance, discover the perfect living room makeover that reflects your personality. Say goodbye to dull interiors and hello to a vibrant, welcoming atmosphere that inspires relaxation and social gatherings. Create lasting memories in a space that's both functional and aesthetically pleasing, blending comfort and style effortlessly. Let us bring your vision to life with our expert touch, turning your living room into the heart of your home where moments are cherished and shared."/>
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/bed1"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Exterior Renovation"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Revitalize your home's exterior and enhance its curb appeal with our top-tier renovation services. Experience the transformation of your outdoor space into a stunning showcase of style and functionality. From modern facades to timeless charm, discover the perfect exterior makeover that complements your home's architecture. Say goodbye to worn-out exteriors and hello to a fresh, captivating look that makes a lasting impression. Create an inviting outdoor environment that reflects your personality and welcomes guests with open arms. Let us elevate your home's exterior with our expertise, turning it into a picturesque haven that you'll be proud to call your own."/>
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/bed1"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+</ScrollView>
